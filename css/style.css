@@ -198,6 +198,8 @@ ol#menu li a {
 /* */
 h2.row-title {
     color: var(--red-text);
+    margin-top:0;
+    padding-top: 0;
 }
 
 h3.row-title {
@@ -231,6 +233,10 @@ h3.row-title {
     background: #fff;
 }
 
+#third-row-wrapper #third-row-left {
+    height: 1370px;
+}
+
 #third-row-left {
     background: url(../images/S.png) no-repeat #fff;
     background-position:-1300px 100%;
@@ -242,13 +248,51 @@ h3.row-title {
     padding: 47px 0 0 39px;
 }
 
+#third-row-left {
+    text-transform: uppercase;
+    color: #000;
+    box-sizing: border-box;
+}
+
+#third-row-left .config-calc-row {
+    font-family: Din;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+#third-row-left .config-calc-label {
+    width: 270px;
+    float: left;
+    padding-top: 8px;
+}
+
+#third-row-left .config-calc-data {
+    width: 150px;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: none;
+    text-align: right;
+    width: 470px;
+}
+
+#third-row-left .config-calc-desc {
+    font-size: 25px;
+    color: var(--red-text);
+    text-transform: none;
+    margin-top: -10px;
+    clear: both;
+}
+
 #third-row-right {
     width: 58%;
     float: right;
     background: #fff;
     box-sizing: border-box;
     padding: 45px 45px 45px 0;
-    margin-top: -220px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .config-block {
@@ -304,12 +348,32 @@ h3.row-title {
 }
 
 .config-berry {
-    background: url(../images/grey.png) no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     width: 56px;
     height: 56px;
     background-size: contain;
     margin-right: 3vw;
+}
+
+.config-berry:nth-child(1) {
+    background-image: url(../images/color-black.png);
+}
+
+.config-berry:nth-child(2) {
+    background-image: url(../images/color-grey.png);
+}
+
+.config-berry:nth-child(3) {
+    background-image: url(../images/color-blue.png);
+}
+
+.config-berry:nth-child(4) {
+    background-image: url(../images/color-white.png);
+}
+
+.config-berry:nth-child(5) {
+    background-image: url(../images/color-red.png);
 }
 
 .config-berry.selected {
@@ -379,7 +443,8 @@ footer {
 #index-first-row {
     background: url(../images/front-1.jpg);
     background-size: cover;
-    background-position: center -30px
+    background-position: center -30px;
+    margin-top: -50px;
 } 
 
 #index-second-row {
@@ -482,7 +547,7 @@ footer {
 #index-fourth-row .name-model {
     text-transform: uppercase;
     height: 150px;
-    margin-top: -130px;
+    margin-top: -140px;
 }
 
 #index-fourth-row .year {
@@ -789,6 +854,7 @@ body.services #fourth-row-wrapper #fourth-row-button {
     top: 0;
     right: 0;
     color: #000;
+    display: none;
 }
 
 #mobile-menu-block ol {

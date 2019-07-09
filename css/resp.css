@@ -722,27 +722,37 @@
     /* INDEX */
     
     #index-first-row {
-        background-position: center -1000px
+        background-position: center -1100px
     }
     
     #index-first-row #spacer {
-        height: 650px;
+        height: 490px;
     }
     
     #index-second-row {
-        background-position: center -1000px
+        background-position: center -1100px
     }
     
     #index-second-row #spacer {
-        height: 650px;
+        height: 490px;
     }
     
     #index-third-row {
-        background-position: center -1000px
+        background-position: center -1100px
     }
     
     #index-third-row #spacer {
-        height: 650px;
+        height: 490px;
+    }
+    
+    #index-fourth-row .index-row {
+        width: 100%;
+        display: flex;
+    }
+    
+    #index-fourth-row .index-row .index-col {
+        padding: 20% 40px 0;
+        background-position: center 3%;
     }
     
     #index-fifth-row {
